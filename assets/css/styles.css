@@ -1,0 +1,50 @@
+/* Estilo para la barra de navegación */
+.navbar {
+    z-index: 10; /* Asegura que la barra de navegación esté sobre la imagen de fondo */
+    position: relative;
+}
+
+/* Estilo para el contenedor principal con la imagen de fondo */
+.background-image {
+    background-image: url('https://puntimmobiliari.com/wp-content/uploads/2021/08/venta-vivienda.jpg'); /* Coloca la ruta de tu imagen aquí */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos el alto de la ventana del navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-bottom: 20px; /* Espacio entre las filas de tarjetas */
+}
+
+.card-img-top {
+    width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+    height: 60%; /* Ajusta la imagen al largo de la tarjeta */
+}
+
+
+.carousel-caption {
+    top: 10%; /* Mueve el texto hacia la parte superior (ajusta el valor según prefieras) */
+    transform: translateX(-50%); /* Ajuste para centrar completamente en el eje horizontal */
+    padding: 0px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80%; /* Ancho opcional para controlar el tamaño del texto */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    color: #fff; /* Color blanco */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* Tamaño del párrafo */
+    color: #fff; /* Color blanco */
+  
+}
+
+
