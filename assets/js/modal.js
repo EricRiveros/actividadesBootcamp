@@ -81,7 +81,7 @@
                     icon: "success",
                     title: "Formulario Enviado",
                     showConfirmButton: false,
-                    timer: 2500
+                    timer: 4000
                 });
                 $('#exampleModal').modal('hide')
                 formularioLindo[0].reset()
