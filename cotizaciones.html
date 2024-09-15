@@ -33,59 +33,47 @@
         </div>
       </nav>
 
-      <section>
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col">
-                    <label for=""> PROPIEDADES: </label>
-                </div>
-                <div class="col">
-                    <select name="" id="">
-                        <option value="">- Seleccionar -</option>
-                        <option value="CASA">Casa</option>
-                        <option value="DEPARTAMENTO">Departamento</option>
-                        <option value="LOCALCOMERCIAL">Local Comercial</option>
-                        <option value="TERRENO">Terreno</option>
-                        <option value="CONDOMINIO">Condominio</option>
-                    </select>
-                </div>
+      <div class="container">
+        <div class="form-container">
+          <h2 class="text-center mb-4">Formulario de Seguro de Propiedades</h2>
+          
+          <form id="formularioSeguro">
+            <div class="mb-3">
+              <label for="tipoPropiedad" class="form-label">Tipo de Propiedad</label>
+              <select class="form-select" id="tipoPropiedad" required>
+                <option value="" selected disabled>Seleccione el tipo de propiedad</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="terreno">Terreno</option>
+              </select>
             </div>
-            <div class="row justify-content-center">
-                <div class="col">
-                    <label for=""> Año: </label>
-                </div>
-                <div class="col">
-                    <input type="date" name="" id="">
-                </div>                
+            
+            <div class="mb-3">
+              <label for="anioCotizacion" class="form-label">Año para Cotizar</label>
+              <input type="date" class="form-control" id="anioCotizacion" required>
             </div>
-            <div class="row justify-content-center">
-                <div class="col">
-                    <label>
-                        Básico
-                    </label>
-                </div>
-                <div class="col">
-                    <input type="checkbox" id="cbox1" value="BASICO" /> 
-                </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Tipo de Seguro</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoSeguro" id="seguroBasico" value="basico" required>
+                <label class="form-check-label" for="seguroBasico">Básico</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoSeguro" id="seguroCompleto" value="completo" required>
+                <label class="form-check-label" for="seguroCompleto">Completo</label>
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col">
-                    <label>
-                        Completo
-                    </label>
-                </div>
-                <div class="col">
-                    <input type="checkbox" id="cbox2" value="COMPLETO" /> 
-                </div>
+            
+          
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Cotizar</button>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <button class="btn btn-primary" type="button">Cotizar seguro</button>
-                </div>
-            </div>
+          </form>
+                
         </div>
-    </section>
-
+      </div>
+    
     <div id="formularioConModal"></div>
 
 
