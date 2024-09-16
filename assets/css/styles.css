@@ -1,4 +1,7 @@
-/* Estilo para la barra de navegación */
+
+ body{
+    background-color: #343a40 !important /*el !important me ayuda sobre escribir un accion de mi codigo*/
+ }
 .navbar {
     z-index: 10; /* Asegura que la barra de navegación esté sobre la imagen de fondo */
     position: relative;
@@ -47,4 +50,27 @@
   
 }
 
-
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  .cotizacion-container {
+    margin-top: 20px;
+  }
+  .cotizacion {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f1f1f1;
+  }
+  .cotizacion h5 {
+    margin-bottom: 10px;
+  }
+  .btn-cotizar {
+    margin-top: 10px;
+    width: 100%;
+  }
