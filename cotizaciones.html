@@ -91,6 +91,7 @@
           </div>
         </div>
 
+
         <div class="d-grid">
           <button type="submit" class="btn btn-primary">Cotizar</button>
         </div>
@@ -99,6 +100,50 @@
       <div id="resumenCotizacion" class="mt-4"></div>
 
     </div>
+
+      <div class="container">
+        <div class="form-container">
+          <h2 class="text-center mb-4">Formulario de Seguro de Propiedades</h2>
+          
+          <form id="formularioSeguro">
+            <div class="mb-3">
+              <label for="tipoPropiedad" class="form-label">Tipo de Propiedad</label>
+              <select class="form-select" id="tipoPropiedad" required>
+                <option value="" selected disabled>Seleccione el tipo de propiedad</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="terreno">Terreno</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="anioCotizacion" class="form-label">Año para Cotizar</label>
+              <input type="date" class="form-control" id="anioCotizacion" required>
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Tipo de Seguro</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoSeguro" id="seguroBasico" value="basico" required>
+                <label class="form-check-label" for="seguroBasico">Básico</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoSeguro" id="seguroCompleto" value="completo" required>
+                <label class="form-check-label" for="seguroCompleto">Completo</label>
+              </div>
+            </div>
+            
+          
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Cotizar</button>
+            </div>
+          </form>
+                
+        </div>
+      </div>
+    
+    <div id="formularioConModal"></div>
+
 
   </div>
   </div>
