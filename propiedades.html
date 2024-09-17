@@ -1,175 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguros</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguros</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.jpeg" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Propiedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
-              </li>
-              <li class="nav-item" >
-               <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contacto</a>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.jpeg" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Propiedades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor para las tarjetas -->
+  <section class="container">
+    <h1 class="display-4 m-5">Nuestras propiedades</h1>
+
+  </section>
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa" data-ubicacion="Chicureo, Santiago" data-ciudad="Región Metropolitana" data-descripcion="905m²"
+          data-precio="19490">
+          <img src="assets/img/ralph-ravi-kayden-mR1CIDduGLc-unsplash-1-1-1024x680.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en Venta</small>
+            <p class="card-text">Casa Piedra Roja Chicureo</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF 19.490</h5>
+            <p class="card-text">905 m² totales 4 dormitorios 5 baños</p>
+            <small class="text-body-secondary">1 disponible</small>
           </div>
         </div>
-      </nav>
-
-      <!-- Contenedor para las tarjetas -->
-<div class="container mt-4">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/ralph-ravi-kayden-mR1CIDduGLc-unsplash-1-1-1024x680.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa en Condominio" data-ubicacion="Chicureo, las Brisas, Santiago" data-ciudad="Región Metropolitana"
+          data-descripcion="410m²" data-precio="10150">
+          <img src="assets/img/casa2.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en Condominio en Venta</small>
+            <p class="card-text">Chicureo Las Brisas Casa En Condominio </p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF 10.150</h5>
+            <p class="card-text"> 3 Dormitoris 2 baños 410 m² totales</p>
+            <small class="text-body-secondary">1 disponible</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/casa2.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa en Condominio" data-ubicacion="La Reserva, Santiago" data-ciudad="Región Metropolitana"
+          data-descripcion="1025m²" data-precio="22500">
+          <img src="assets/img/concon.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en Condominio en Venta</small>
+            <p class="card-text">Condominio La Reserva</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF 22.500</h5>
+            <p class="card-text">1025 m² totales
+              4 dormitorios
+              6 baños</p>
+            <small class="text-body-secondary">1 disponible</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/concon.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa" data-ubicacion="Ñuñoa, Santiago" data-ciudad="Región Metropolitana" data-descripcion="151m²"
+          data-precio="10490">
+          <img src="assets/img/renaca.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en Venta</small>
+            <p class="card-text">Ñuñoa Los Cerezos townhouse</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF
+              10.490</h5>
+            <p class="card-text">151 m² totales
+              3 dormitorios
+              2 baños</p>
+            <small class="text-body-secondary">2 disponibles</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/renaca.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa" data-ubicacion="Bosques de Montemar, Concon" data-ciudad="V Región"
+          data-descripcion="1007m²" data-precio="31000">
+          <img src="assets/img/villa.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en venta</small>
+            <p class="card-text">Gran Casa En Venta. Bosques De Montemar</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF
+              31.000</h5>
+            <p class="card-text">1007 m² totales
+              6 dormitorios
+              7 baños</p>
+            <small class="text-body-secondary">1 disponible</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/villa.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Departamento" data-ubicacion="Montemar, Concon" data-ciudad="V Región" data-descripcion="150m²"
+          data-precio="10900">
+          <img src="assets/img/depa1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Departamento en Venta</small>
+            <p class="card-text"> Blanca Estela, Montemar. Concon</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF
+              10.900</h5>
+            <p class="card-text">150 m² totales
+              5 dormitorios
+              4 baños</p>
+            <small class="text-body-secondary">2 disponible</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/palmera.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa" data-ubicacion="Montemar, Concon" data-ciudad="V Región" data-descripcion="139m²"
+          data-precio="12100">
+          <img src="assets/img/palmito.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en Venta</small>
+            <p class="card-text">Townhouses Montemar Argenta</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF
+              12.100</h5>
+            <p class="card-text">139 m² útiles
+              4 dormitorios
+              3 baños0
+            </p>
+            <small class="text-body-secondary">1 disponible</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/palmito.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Departamento" data-ubicacion="Lomas De Montemar, Concon" data-ciudad="V Región"
+          data-descripcion="350m²" data-precio="17490">
+          <img src="assets/img/depa2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Departamento en Venta</small>
+            <p class="card-text">Lomas De Montemar</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF
+              17.490</h5>
+            <p class="card-text">350 m² totales
+              5 dormitorios
+              4 baños</p>
+            <small class="text-body-secondary">1 disponible</small>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/paraiso.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/patio.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <small class="text-body-secondary">si es casa, depa,terreno y si está en venta o se arrienda</small>
-          <p class="card-text">ubicación</p>
-          <small class="text-body-secondary">Desde</small>
-          <h5 class="card-title">precio</h5>
-          <p class="card-text">(cuantos dormitorios, baños y m2 utiles)</p>
-          <small class="text-body-secondary">cuantas están disponible</small>
+      <div class="col">
+        <div class="card h-100" data-tipoDeVivienda="Casa" data-ubicacion="Los Romeros, Concon" data-ciudad="V Región"
+          data-descripcion="420m²" data-precio="8800">
+          <img src="assets/img/patio.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <small class="text-body-secondary">Casa en Venta</small>
+            <p class="card-text">Los Romeros, Concón</p>
+            <small class="text-body-secondary">Desde</small>
+            <h5 class="card-title">UF
+              8.800</h5>
+            <p class="card-text">420 m² totales
+              4 dormitorios
+              3 baños</p>
+            <small class="text-body-secondary">2 disponibles</small>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div id="formularioConModal"></div>
+  <div id="formularioConModal"></div>
+  <div id="spinner-overlay" class="spinner-overlay" style="display: none;">
+    <div id="spinner" class="spinner"></div>
+  </div>
+  <footer class="bg-dark text-white text-center py-4 mt-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 InmoSeguros. Todos los derechos reservados.</p>
+      <p class="mb-0">Dirección: Calle Ejemplo 123, Ciudad, País</p>
+      <p class="mb-0">Teléfono: +123 456 7890 | Email: contacto@inmoseguros.com</p>
+    </div>
+  </footer>
 
-      <footer class="bg-dark text-white text-center py-4 mt-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2024 InmoSeguros. Todos los derechos reservados.</p>
-            <p class="mb-0">Dirección: Calle Ejemplo 123, Ciudad, País</p>
-            <p class="mb-0">Teléfono: +123 456 7890 | Email: contacto@inmoseguros.com</p>
-        </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/modal.js"></script>
 </body>
+
 </html>

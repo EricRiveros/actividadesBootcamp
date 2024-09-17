@@ -1,4 +1,7 @@
-/* Estilo para la barra de navegación */
+
+ body{
+    background-color: #343a40 !important /*el !important me ayuda sobre escribir un accion de mi codigo*/
+ }
 .navbar {
     z-index: 10; /* Asegura que la barra de navegación esté sobre la imagen de fondo */
     position: relative;
@@ -18,6 +21,7 @@
 
 .card {
     margin-bottom: 20px; /* Espacio entre las filas de tarjetas */
+    transition: transform 0.3s ease;
 }
 
 .card-img-top {
@@ -47,4 +51,60 @@
   
 }
 
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  .cotizacion-container {
+    margin-top: 20px;
+  }
+  .cotizacion {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f1f1f1;
+  }
+  .cotizacion h5 {
+    margin-bottom: 10px;
+  }
+  .btn-cotizar {
+    margin-top: 10px;
+    width: 100%;
+  }
+section {
+  color: white
+}
 
+/* Spinner */
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid gray;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+/* Overlay para oscurecer la pantalla */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999
+}
+
+/* Animación del spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
